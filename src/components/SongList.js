@@ -32,4 +32,5 @@ const mapStateToProps = (state) => {
   return { songs: state.songs };
 };
 
+// connect object take the action and throw it into dispatch function for us automaticly
 export default connect(mapStateToProps, { selectSong })(SongList);
